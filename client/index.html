@@ -5,26 +5,25 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Requests in JS lab!</title>
+    <link rel='stylesheet' href='./styles.css'></link>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.1/axios.min.js"></script>
     <script src="./script.js" defer></script>
-    <style>
-        #repeat-text {
-            font-size: xx-large;
-            display: none;
-        }
-        #hello-text {
-            font-size: xx-large;
-            display: none;
-        }
-    </style>
 </head>
 <body>
-    <button id='say-hello-button'>say hello!</button>
-    <button id='animals-button'>oh my!</button>
-    <button id='repeat-button'>repeat my param</button>
-    <button id='query-button'>send a query</button>
+    <div class='button-container'>
+        <button class='selector-button1' id='say-hello-button' style='border-radius: 10px; background-color: transparent;'>Say Hello!</button>
+        <button class='selector-button2' id='animals-button' style='border-radius: 10px; background-color: rgb(145, 222, 252);'>Oh My!</button>
+        <button class='selector-button2' id='repeat-button' style='border-radius: 10px; background-color: rgb(145, 222, 252);'>Repeat My Param</button>
+        <button class='selector-button2' id='query-button' style='border-radius: 10px; background-color: rgb(145, 222, 252);'>Send a Query</button>
+    </div>
+   
 
     <p id='hello-text'>Hello World!</p>
     <p id='repeat-text'></p>
+
+    <form action="" style='margin-top: 10px;'>
+        <input type="text" placeholder="enter a food...">
+        <button class='selector-button3' type="submit" style='border-radius: 10px; background-color: rgb(145, 238, 145);'>Add Food</button>
+    </form>
 </body>
 </html>
