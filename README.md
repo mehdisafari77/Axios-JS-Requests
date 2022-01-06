@@ -5,4 +5,7 @@ Practice for Axios calls in JS
 A website that practices Axios post, get, and delete functions, plus DOM manipulation for displaying of data on the clint side of code. 
 
 ## Gif of Website
+![Gif](/gif.gif)
+
+
 
