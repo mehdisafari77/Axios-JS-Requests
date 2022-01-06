@@ -6,14 +6,13 @@
     font-size: xx-large;
     display: none;
 }
-button:hover {
-}
 body {
     height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    background-image: url('./1.jpeg');
 }
 .button-container {
     display: flex;
@@ -25,8 +24,8 @@ body {
     font-family: monospace;
     box-shadow: 3px 3px rgb(245, 245, 158);
     border: none !important;
+    background-color: #EFEFEF;
 }
-
 .selector-button2 {
     margin: 5px;
     height: 40px;
@@ -53,7 +52,7 @@ body {
 }
 input {
     border-radius: 10px;
-    border: solid 2px rgb(206, 204, 204);
+    border: none;
     height: 30px;
     font-family: monospace;
 }

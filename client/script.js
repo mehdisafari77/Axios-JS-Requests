@@ -57,7 +57,7 @@ const sayHello = () => {
     axios.get('http://localhost:3000/say-hello').then((res) => {
         let helloText = document.getElementById('hello-text');
         helloText.style.display = 'block';
-        helloText.style.backgroundColor = 'green';
+        helloText.style.backgroundColor = 'rgb(145, 238, 145)';
         helloText.textContent = res.data;
     })
 }
@@ -134,7 +134,7 @@ document.getElementById("repeat-button").addEventListener('click', repeatMyParam
 */
 
 function sendQuery(){
-    axios.get('http://localhost:3000/query-test/?dsad=h')
+    axios.get('http://localhost:3000/query-test/?mehdi')
         .then(res => {
             console.log(res.data);
         })
@@ -210,3 +210,18 @@ function createFood(event){
 }
 
 document.querySelector('form').addEventListener('click', createFood)
+
+// Half done delete function
+async function deleteQuery(event) {
+    event.preventDefault();
+    try { 
+    const response = await axios.delete('http://localhost:3000/');
+    console.log(`All data has now been deleted`);
+    return response.data;
+    }
+    catch (errors) {
+        console.log('Not yet functional')
+    }
+}
+
+document.getElementById('delete-button').addEventListener('click', deleteQuery)
